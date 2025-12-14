@@ -1,1 +1,66 @@
+class Person {
+    protected String name;
+
+    Person(String name) {
+        this.name = name;
+    }
+
+    void breathe() {
+        System.out.printf("%s is breathing\n", name);
+    }
+
+    void eat() {
+        System.out.printf("%s is eating\n", name);
+    }
+}
+
+class Doctor extends Person {
+    Doctor(String n) {
+        super(n);
+    }
+
+    void treats() {
+        System.out.printf("%s gives treatment to patients\n", name);
+    }
+}
+
+class Engineer extends Person {
+    Engineer(String n) {
+        super(n);
+    }
+
+    void make() {
+        System.out.printf("%s makes software\n", name);
+    }
+}
+
+class Teacher extends Person {
+    Teacher(String n) {
+        super(n);
+    }
+
+    void teach() {
+        System.out.printf("%s teaches students\n", name);
+    }
+}
+
+public class TaskTwo {
+    public static void main(String[] args) {
+        Teacher tcr = new Teacher("Skibidi");
+        Doctor dct = new Doctor("Niham");
+        Engineer eng = new Engineer("Munna");
+
+        tcr.breathe();
+        tcr.eat();
+        tcr.teach();
+
+        dct.breathe();
+        dct.eat();
+        dct.treats();
+
+        eng.breathe();
+        eng.eat();
+        eng.make();
+    }
+}
 
