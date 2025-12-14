@@ -1,1 +1,20 @@
+public class PersonalInfo {
+    public static void main(String[] args) {
+        String name = "Rifatul Islam Niham";
+        String studentId = "E251005";
+        int age = 22;
+        String email = "rifatniham@gmail.com";
+        String phone = "+8801609512956";
+        String address = "Mirsarai, Chattogram";
 
+        System.out.println("Personal Information:");
+        System.out.println("Name: " + name);
+        System.out.println("Student ID: " + studentId);
+        System.out.println("Age: " + age);
+        System.out.println("Email: " + email);
+        System.out.println("Phone: " + phone);
+        System.out.println("Address: " + address);
+
+        System.out.printf("\nFormatted Information:\nName: %s\nStudent ID: %s\nAge: %d\nEmail: %s\nPhone: %s\nAddress: %s\n", name, studentId, age, email, phone, address);
+    }
+}
