@@ -1,1 +1,26 @@
+class IDCard {
+    private String name;
+    private String id;
+    private String department;
+    private String institution;
+
+    IDCard(String name, String id, String department, String institution) {
+        this.name = name;
+        this.id = id;
+        this.department = department;
+        this.institution = institution;
+    }
+
+    void showId() {
+        System.out.println("Name: " + name);
+        System.out.println("ID: " + id);
+        System.out.println("Department: " + department);
+        System.out.println("Institution: " + institution);
+    }
+
+    public static void main(String[] args) {
+        IDCard card = new IDCard("Rifat Niham", "E251005", "CCE", "IIUC");
+        card.showId();
+    }
+}
 
